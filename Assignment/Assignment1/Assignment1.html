@@ -1,0 +1,37 @@
+<!-- 1. Program to sort an array of all prime numbers between 1 and user given number value.
+•	User should enter any number and apply a validation check to accept only numbers.
+•	Display out in the console. The sample output should be [2,3,5] if I input 5. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Assignment1 </title>
+  <script>
+    const num = parseInt(prompt("enter a value"));
+  let text;
+  if (isNaN(num) || num < 1) {
+      text = "Input invalid";
+    } else {
+      text = "Input OK";
+    }
+  console.log(text);
+  console.log('Prime numbers are');
+  for(let i=0;i<=num;i++){
+      let c=0;
+      for(let j=0;j<=num;j++){
+          if(i%j==0){
+              c++;
+          }
+      }
+      if(c==2)
+      {
+          console.log(i);
+      }
+  }
+  </script>
+</head>
+<body>
+<h3> Sort an array of all prime numbers between 1 and user given number value. </h3>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- 5. JavaScript function to replace each character of a given string with the next one. 'a' will be replaced by 'b' or 'z' would be replaced by 'a'.
+•	e.g. If the user provides an input string like abcdxyz, the output should be bcdeyza -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 5</title>
+</head>
+<body>
+  <h3> Replacing each character of a given string with the next one. 'a' will be replaced by 'b' or 'z' would be replaced by 'a'. </h3>
+
+    <script>
+        function replace_str(str) {
+  var a = str.split("");
+  for(var i = 0; i < a.length; i++) {
+    var n = a[i].charCodeAt() - 'a'.charCodeAt();
+    n = (n + 1) % 26; 
+    a[i] = String.fromCharCode(n + 'a'.charCodeAt());
+  }
+  return a.join("");
+}
+
+console.log(replace_str("abcdxyz"))
+
+    </script>
+
+</body>
+</html>
+

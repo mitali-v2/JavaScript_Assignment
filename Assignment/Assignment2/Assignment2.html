@@ -1,0 +1,40 @@
+<!-- 2. Program to check if a user entered number is prime or even or odd number.
+•	User should enter any number and apply a validation check to accept only numbers.
+•	Display out in the console/alert dialog box. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 2</title>
+    <script> 
+    const num = parseInt(prompt("Enter a value"));
+let text;
+if (isNaN(num) || num < 1) {
+    text = "Input not valid";
+  } 
+  else {
+    text = "Input OK";
+  }
+console.log(text);
+let c=0;
+for(let i=2; i<=num/2; i++){
+    if(num%i==0){
+        console.log('number is not prime');
+        c=1;
+    }
+}
+if(c==0){
+    console.log('Entered number is Prime');
+}
+else if(num%2==0){
+    console.log('Entered number is Even');
+ }
+ else{
+     console.log('Entered number is Odd');
+ }
+ </script>
+</head>
+<body>
+    <h3> Check if a user entered number is prime or even or odd number </h3>   
+</body>
+</html>

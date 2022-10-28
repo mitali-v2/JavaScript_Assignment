@@ -1,0 +1,31 @@
+<!-- 3. Create a simple form with a textbox, and buttons and try to apply validation rules.
+•	Please display appropriate validation messages on the screen. 
+•	HTML and JavaScript logic should be written in separate files. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment-3</title>
+    
+</head>
+<body>
+    
+    <h2>Registration Form</h2>
+    <form  id="form" method="post">
+        <div id="message">
+            
+        <p> Enter Username: <p>
+        <input type="text" id="username" placeholder="Username" required/> <br> <br>
+
+        <p> Enter Password: </p>
+        <input type="password" id="password" placeholder="Password" required/> <br> <br>
+
+        <p> Enter Mobile Number: </p>
+        <input type="tel" id="phone" placeholder="Mob Number" pattern="[0-9]{10}" required/> <br> <br> <br>  
+
+        <input type="submit" value="Register"/>  
+    </form>
+    <script src="assign3_forms.js"></script> 
+</body>
+</html>
